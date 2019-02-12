@@ -1,4 +1,4 @@
-package com.example.gravitydig;
+package com.patevs.gravitydig;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
