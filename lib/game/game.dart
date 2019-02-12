@@ -14,6 +14,7 @@ import 'package:flame/game.dart';
 import 'package:flame/palette.dart';
 
 // components
+//mport 'components/background.dart';
 import 'components/simple.dart';
 
 // END of IMPORTS
@@ -22,7 +23,7 @@ import 'components/simple.dart';
 // Palette class stores global color values
 class Palette {
   //static const PaletteEntry black = BasicPalette.black;
-  //static const PaletteEntry WHITE = BasicPalette.white;
+  static const PaletteEntry WHITE = BasicPalette.white;
   //static const PaletteEntry GREY  = PaletteEntry(Color(0xFF404040));
   //static const PaletteEntry red   = PaletteEntry(Colors.red);
   static const PaletteEntry GREEN = PaletteEntry(Colors.green);
@@ -47,7 +48,10 @@ class GravityDigGame extends BaseGame {
   }
   // METHODS
   _start() async {
+    // get screen size
     Size size = await Flame.util.initialDimensions();
+    // add components
+    //add(BackgroundSprite(size, Palette.WHITE.paint));
     add(SimpleComponent(size, Palette.GREEN.paint));
   }
 } // END of GravityDigGame
