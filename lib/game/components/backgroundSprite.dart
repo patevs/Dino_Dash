@@ -11,14 +11,11 @@ import 'package:flame/components/component.dart';
 
 // BackgroundSpriteComponent class
 class BackgroundSpriteComponent extends SpriteComponent {
-  // FIELDS
-  //static final String _bgPath;
-  //static Sprite bgSprite = Sprite(bgPath);
   // CONSTRUCTOR
-  BackgroundSpriteComponent(Size size, String path) { 
-    width = size.width;
-    height = size.height;
-    sprite = Sprite(path);
+  BackgroundSpriteComponent(Size _size, String _path) { 
+    width = _size.width;
+    height = _size.height;
+    sprite = Sprite(_path);
   }
   // METHODS
   /*
