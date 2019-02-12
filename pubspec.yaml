@@ -9,12 +9,15 @@ version: 0.0.1
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
 
-# Project dependencies
+# Project dependencies (external packages/libs)
 dependencies:
+  # Flutter SDK
   flutter:
     sdk: flutter
   # CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  # Flame game engine
+  flame: ^0.10.2
 
 # Development dependencies
 dev_dependencies:

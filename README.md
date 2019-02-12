@@ -12,6 +12,7 @@
 
 ### Flame Game Engine
 
+* [`Package`](https://pub.dartlang.org/packages/flame)
 * [`Repository`](https://github.com/luanpotter/flame)
 * [`Documentation`](https://github.com/luanpotter/flame/tree/master/doc)
 
