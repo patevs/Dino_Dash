@@ -18,21 +18,13 @@ class BackgroundSpriteComponent extends SpriteComponent {
     sprite = Sprite(_path);
   }
   // METHODS
-  /*
-  @override
-  void resize(Size size) {
-    this.x = ((size.width - this.width) / 2) + (this.width / 2);
-    this.y = ((size.height - this.height) / 2) + (this.height / 2);
-  }
-  */
   @override
   void render(Canvas c) {
     prepareCanvas(c);
     sprite.render(c, width, height);
   }
-  void update(double t) {
-    // TODO
-  }
+  //@override
+  //void update(double t) {  }
 } // END of BackgroundSprite
 
 

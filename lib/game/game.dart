@@ -12,17 +12,20 @@ import 'package:flutter/material.dart';
 import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
 import 'package:flame/palette.dart';
+//import 'package:flame/components/text_component.dart';
+//import 'package:flame/text_config.dart';
 
 // components
 import 'components/backgroundSprite.dart';
 import 'components/simple.dart';
+import 'components/playerSprite.dart';
 
 // END of IMPORTS
 
 
 // Palette class stores global color values
 class Palette {
-  //static const PaletteEntry black = BasicPalette.black;
+  static const PaletteEntry BLACK = BasicPalette.black;
   static const PaletteEntry WHITE = BasicPalette.white;
   //static const PaletteEntry GREY  = PaletteEntry(Color(0xFF404040));
   static const PaletteEntry BROWN = PaletteEntry(Colors.brown);
@@ -65,6 +68,7 @@ class GravityDigGame extends BaseGame {
     add(BackgroundSpriteComponent(size, "backgrounds/02_trees.png"));
     add(BackgroundSpriteComponent(size, "backgrounds/01_ground.png"));
     add(SimpleComponent(size, Palette.BROWN.paint));
+    add(PlayerSprite(size));
   }
 } // END of GravityDigGame
 
