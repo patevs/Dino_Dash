@@ -61,6 +61,8 @@ class GravityDigGame extends BaseGame {
     Size size = await Flame.util.initialDimensions();
     // add components
     add(BackgroundSpriteComponent(size, "backgrounds/07_background.png"));
+    add(BackgroundSpriteComponent(size, "backgrounds/03_distant_trees.png"));
+    add(BackgroundSpriteComponent(size, "backgrounds/02_trees.png"));
     add(BackgroundSpriteComponent(size, "backgrounds/01_ground.png"));
     add(SimpleComponent(size, Palette.BROWN.paint));
   }
