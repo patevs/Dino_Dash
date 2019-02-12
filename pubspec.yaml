@@ -34,6 +34,7 @@ flutter:
   
   # Image and audio assets
   assets:
+    - assets/images/backgrounds/01_ground.png
     - assets/images/backgrounds/07_background.png
 
   # An image asset can refer to one or more resolution-specific "variants", see

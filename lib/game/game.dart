@@ -14,7 +14,8 @@ import 'package:flame/game.dart';
 import 'package:flame/palette.dart';
 
 // components
-//mport 'components/background.dart';
+import 'components/background.dart';
+import 'components/backgroundSprite.dart';
 import 'components/simple.dart';
 
 // END of IMPORTS
@@ -36,11 +37,17 @@ class Palette {
 //TextConfig small   = regular.withFontSize(14.0);
 //TextConfig tiny    = regular.withFontSize(12.0);
 
+const List<String> allImages = [
+  "backgrounds/01_ground.png", 
+  "backgrounds/07_background.png"
+];
 
 // GravityDigGame class
 class GravityDigGame extends BaseGame {
   // CONSTRUCTOR
   GravityDigGame() {
+    // load all image assets
+    Flame.images.loadAll(allImages);
     // enter fullscreen mode
     Flame.util.fullScreen();
     // start the game
@@ -51,7 +58,9 @@ class GravityDigGame extends BaseGame {
     // get screen size
     Size size = await Flame.util.initialDimensions();
     // add components
-    //add(BackgroundSprite(size, Palette.WHITE.paint));
+    debugPrint(Flame.images.loadedFiles.toString());
+//    add(BackgroundSprite(size));
+    add(BackgroundSpriteComponent(size, "backgrounds/01_ground.png"));
     add(SimpleComponent(size, Palette.GREEN.paint));
   }
 } // END of GravityDigGame

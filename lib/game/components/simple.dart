@@ -25,6 +25,7 @@ class SimpleComponent extends PositionComponent {
   }
   // METHODS
   void render(Canvas c) {
+    prepareCanvas(c);
     c.drawRect(
       Rect.fromLTWH(xPos, yPos, width, compHeight), 
       fillColor

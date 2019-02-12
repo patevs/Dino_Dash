@@ -1,6 +1,6 @@
 
 /*
-    lib/game/components/background.dart
+    lib/game/components/backgroundSprite.dart
 */
 
 // IMPORTS
@@ -9,16 +9,16 @@ import 'dart:ui';
 import 'package:flame/sprite.dart';
 import 'package:flame/components/component.dart';
 
-// BackgroundComponent class
-class BackgroundSprite extends SpriteComponent {
+// BackgroundSpriteComponent class
+class BackgroundSpriteComponent extends SpriteComponent {
   // FIELDS
-  static final String bgPath = "backgrounds/07_background.png";
+  //static final String _bgPath;
   //static Sprite bgSprite = Sprite(bgPath);
   // CONSTRUCTOR
-  BackgroundSprite(Size size) { 
+  BackgroundSpriteComponent(Size size, String path) { 
     width = size.width;
     height = size.height;
-    sprite = Sprite(bgPath);
+    sprite = Sprite(path);
   }
   // METHODS
   /*
