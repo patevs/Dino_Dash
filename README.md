@@ -1,13 +1,13 @@
 
 # Dino_Dash
 
-Testing Flutter SDK and Flame game engine package.
+Testing `Flutter SDK` and `Flame` game engine package.
 
 ----
 
 ## Documentation & Resources
 
-### Flutter
+### Flutter SDK
 
 * [`Documentation`](https://flutter.io/docs)
 * [`Samples`](https://flutter.io/docs/cookbook)
