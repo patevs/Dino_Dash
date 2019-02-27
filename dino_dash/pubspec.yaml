@@ -1,8 +1,8 @@
 
-# pubspec.yaml
+# dino_dash/pubspec.yaml
 
 # Project details
-name: gravity_dig
+name: dino_dash
 description: Basic game created using Flutter
 version: 0.0.1
 

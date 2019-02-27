@@ -1,6 +1,6 @@
 
 /*
-    lib/main.dart
+    dino_dash/lib/main.dart
 */
 
 // IMPORTS

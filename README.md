@@ -1,14 +1,16 @@
 
-# gravity_dig
+# Dino_Dash
 
-> Developing a basic game using the Flutter SDK and Flame game engine
+Testing Flutter SDK and Flame game engine package.
 
 ----
 
 ## Documentation & Resources
 
-* [Flutter Samples](https://flutter.io/docs/cookbook)
-* [Online Documentation](https://flutter.io/docs)
+### Flutter
+
+* [`Documentation`](https://flutter.io/docs)
+* [`Samples`](https://flutter.io/docs/cookbook)
 
 ### Flame Game Engine
 
