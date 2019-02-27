@@ -23,17 +23,25 @@ void main() => runApp(
 void main() async {
   runApp(
     MaterialApp(
-      title: 'Dino Dash',
-      home:Scaffold(
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text('Dino Dash Demo')
-          ],
-        ),
-      )
+      title: 'Dino Dash Game',
+      home: SplashScreen()
     )
   );
+}
+
+// SplashScreen stateless widget class
+class SplashScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Text('SPLASH SCREEN')
+        ],
+      ),
+    );
+  }
 }
 
 
