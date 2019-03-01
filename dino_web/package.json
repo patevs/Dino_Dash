@@ -1,0 +1,11 @@
+{
+  "name": "dino_web",
+  "version": "0.0.1",
+  "description": "dino_web",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["dino_web"],
+  "author": "PatEvs",
+  "license": "MIT"
+}
