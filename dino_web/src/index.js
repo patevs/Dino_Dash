@@ -9,7 +9,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 // APP COMPONENTS
-import App from './App';
+import App from './DinoApp/App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
