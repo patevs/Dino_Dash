@@ -8,6 +8,7 @@
 // material design
 import 'package:flutter/material.dart';
 
+import 'dash/game.dart';
 // gravity dig game
 //import 'game/game.dart';
 
@@ -37,7 +38,7 @@ class SplashScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text('SPLASH SCREEN')
+          DinoDashGame().widget
         ],
       ),
     );

@@ -8,7 +8,8 @@ import React, { Component } from 'react';
 // p5 react wrapper
 import P5Wrapper from 'react-p5-wrapper';
 // p5 sketches
-import sketch from './sketches/sketch'
+import dinosketch from './sketches/dino'
+//import sketch from './sketches/sketch'
 // styles
 import './App.css';
 
@@ -18,14 +19,10 @@ class App extends Component {
   constructor(props) {
 		super(props);
 		this.state = {
-			rotation: 150,
+			sketchState: dinosketch,
 		};
   }
   
-	rotationChange(e){
-		this.setState({rotation:e.target.value});
-  }
-
   render() {
     return (
       <div className="App">
@@ -33,8 +30,7 @@ class App extends Component {
           <h1>Dino Dash</h1>
         </header>
         <div>  
-          <P5Wrapper sketch={sketch} rotation={this.state.rotation}/>        
-  				<input type="range" value={this.state.rotation}  min="0"  max="360" step="1" onInput={this.rotationChange.bind(this)}/>
+          <P5Wrapper sketch={this.state.sketchState} />
         </div>
       </div>
     );
@@ -47,3 +43,20 @@ export default App;
 
 // EOF
 
+/* sketch.js
+
+constructor(props) {
+super(props);
+this.state = {
+rotation: 150,
+};
+}
+
+rotationChange(e){
+this.setState({rotation:e.target.value});
+}
+
+<P5Wrapper sketch={sketch} rotation={this.state.rotation}/>        
+<input type="range" value={this.state.rotation}  min="0"  max="360" step="1" onInput={this.rotationChange.bind(this)}/>
+
+*/
