@@ -7,10 +7,11 @@
 
 // p5 sketch
 export default function sketch (p) {
+    
     let rotation = 0;
 
     p.setup = function () {
-        p.createCanvas(420, 420, p.WEBGL);
+        p.createCanvas(380, 420, p.WEBGL);
     };
 
     p.myCustomRedrawAccordingToNewPropsHandler = function (props) {
@@ -27,6 +28,7 @@ export default function sketch (p) {
         p.box(100);
         p.pop();
     };
+
 };
 
 
