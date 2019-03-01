@@ -1,6 +1,14 @@
+
+/**
+ *  src/index.js
+ */
+
+// IMPORTS
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+
+// APP COMPONENTS
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
