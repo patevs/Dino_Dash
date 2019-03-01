@@ -4,8 +4,10 @@
   "author": "patevs",
   "license": "UNLICENSED",
   "dependencies": {
+    "p5": "^0.7.3",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-p5-wrapper": "^0.0.4",
     "react-scripts": "2.1.5"
   },
   "scripts": {
